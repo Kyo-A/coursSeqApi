@@ -5,8 +5,8 @@ module.exports = function(app) {
     // http://localhost:8080/api/?page=0
     // http://localhost:8080/api/?size=5
     // http://localhost:8080/api/?page=0&size=5
-    // http://localhost:8080/api/?nom=SPACEX
-    // http://localhost:8080/api/?nom=SPACEX&size=2
+    // http://localhost:8080/api/?organisation=SPACEX
+    // http://localhost:8080/api/?organisation=SPACEX&size=1
     app.get("/api/", controller.getPagingRockets);
 
     app.get("/api/rockets", controller.getRockets);
